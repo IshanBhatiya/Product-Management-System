@@ -1,0 +1,34 @@
+<div class="container">
+    <h5>Update Product</h5>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Product I'd</label>
+            <input placeholder="Enter Product I'd" name="identity" [(ngModel)]="product.id" type="text" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Name</label>
+            <input placeholder="Enter name" name="name" [(ngModel)]="product.name" type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Description</label>
+            <input placeholder="Enter description" name="description" [(ngModel)]="product.description" type="text" class="form-control"
+                id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Price</label>
+            <input placeholder="Enter price" name="price" [(ngModel)]="product.price" type="number" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Quantity</label>
+            <input placeholder="Enter quantity"  name="quantity" [(ngModel)]="product.quantity" type="number" class="form-control"
+                id="exampleInputPassword1">
+        </div>
+
+        <button (Click)="updateProduct()" type="submit" class="btn btn-primary">Update Product</button>
+    </form>
+</div>

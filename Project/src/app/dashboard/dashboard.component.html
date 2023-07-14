@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">I'd</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Prize</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Operation's</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <tr *ngFor="let prod of products">
+            <td>{{prod.id}}</td>
+            <td>{{prod.name}}</td>
+            <td>{{prod.description}}</td>
+            <td>{{prod.price}}</td>
+            <td>{{prod.quantity}}</td>
+            <td>
+                <button (click)="updateProduct(prod.id)" type="button" class="btn btn-primary">Update</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
